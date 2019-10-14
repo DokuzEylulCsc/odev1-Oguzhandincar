@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Oğuzhan Dincar 2017280073
+</title></head>
+<body>
+<h3>Oğuzhan Dincar </h3>
+<h2>2019 Güz Döneminin ilk ödevi </h2>
+<label for="id1">1.Sayı</label>
+<input type='text' id='id1' /> 
+<br>
+<label for="id2">2.Sayı</label>
+<input type='text' id='id2' /> 
+<br><br>
+<button type="button" id='button' >Topla</button>
+<br><br>
+<div id="kutuToplam"></div>
+<label for="id3">1.Metin</label>
+<input type='text' id='id3' /> 
+<br>
+<label for="id4">2.Metin</label>
+<input type='text' id='id4' /> 
+<br><br>
+<button type="button" id='yapis' value="yapis">Yapıştır</button>
+<script>
+var buton=document.getElementById("button");
+        buton.onclick=function(){
+            var s1=Number(document.getElementById("id1").value);
+            var s2=Number(document.getElementById("id2").value);
+            var toplam=s1+s2;
+                alert("toplamın sonucu:" +' '+toplam) 
+            }
+
+var buton2=document.getElementById("yapis");
+		buton2.onclick=function(){
+            var s4=String(document.getElementById("id3").value);
+            var s5=String(document.getElementById("id4").value);
+            //var ad=s4+s5;
+                alert("Metinlerin Birleşimi :"+s4+ ' ' +s5) // document.getElementById("kutuToplam").innerHTML="Girilen Sayıların Toplamı : "+toplam;
+            }
+/*
+Kaynak:
+1-)https://www.yazilimkodlama.com/web/javascript-toplama-ornegi/
+2-)https://www.youtube.com/watch?v=H_RT1XRqi8I	
+*/		
+			
+		
+</script>
+</body>
+</html>
